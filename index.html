@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NanoSparks (NSPK) — Igniting Micro-Value on Solana</title>
+    <link rel="icon"
+        href="https://blue-payable-antlion-263.mypinata.cloud/ipfs/bafybeiabstsnqk46glhkkrfdu4x2iqbse4vs4ea7wjxrcss46jc65genba">
+    <script src="https://plugin.jup.ag/plugin-v1.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Poppins", Arial, sans-serif;
+            color: #fff;
+            background: radial-gradient(circle at top right, #0a0f1a, #000);
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header img {
+            height: 50px;
+            border-radius: 12px;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            margin-left: 10px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px 50px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #00c8ff;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        .cta-btn {
+            background: linear-gradient(90deg, #00c8ff, #0078ff);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .cta-btn:hover {
+            opacity: 0.8;
+            transform: scale(1.03);
+        }
+
+        .plugin-section {
+            display: flex;
+            justify-content: center;
+            margin: 60px 0;
+        }
+
+        #target-container {
+            width: 400px;
+            height: 568px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 200, 255, 0.2);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.6);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #00c8ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div style="display:flex; align-items:center;">
+            <img src="https://blue-payable-antlion-263.mypinata.cloud/ipfs/bafybeiabstsnqk46glhkkrfdu4x2iqbse4vs4ea7wjxrcss46jc65genba"
+                alt="NanoSparks logo">
+            <h1>NanoSparks (NSPK)</h1>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Igniting Micro-Value on Solana</h1>
+        <p>
+            NanoSparks (NSPK) is a next-generation Solana token built to fuel micro-transactions, rewards, and
+            innovative
+            ecosystems. Join the movement and light up the network with micro-value power.
+        </p>
+        <a href="#buy" class="cta-btn">Buy NSPK Now</a>
+    </section>
+
+    <section id="buy" class="plugin-section">
+        <div id="target-container"></div>
+    </section>
+
+    <footer>
+        <p>🔥 Join the <a href="https://t.me/NanoSparks" target="_blank">NanoSparks Telegram</a> community.</p>
+        <p>Token Address: <code>nSpk8UgUCRGkY33dSST2axKFP45b5PvEFATgWbW5Xk6</code></p>
+        <p>&copy; 2025 NanoSparks — Built on Solana ⚡</p>
+    </footer>
+
+    <script>
+        window.Jupiter.init({
+            displayMode: "integrated",
+            integratedTargetId: "target-container",
+            formProps: {
+                initialAmount: "100000000",
+                initialInputMint: "So11111111111111111111111111111111111111112",
+                initialOutputMint: "nSpk8UgUCRGkY33dSST2axKFP45b5PvEFATgWbW5Xk6",
+                fixedMint: "nSpk8UgUCRGkY33dSST2axKFP45b5PvEFATgWbW5Xk6",
+            },
+            branding: {
+                logoUri: "https://blue-payable-antlion-263.mypinata.cloud/ipfs/bafybeiabstsnqk46glhkkrfdu4x2iqbse4vs4ea7wjxrcss46jc65genba",
+                name: "NanoSparks"
+            },
+        });
+    </script>
+</body>
+
+</html>
